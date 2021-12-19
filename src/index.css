@@ -11,10 +11,11 @@
   margin: 20px auto;
   max-width: 500px;
   min-height: 300px;
-  border: solid 1px black;
+  border: solid 2px black;
   padding: 20px;
   overflow: auto;
   border-radius: 8px;
+  background-color: darkgray;
 }
 .container div {
   padding: 20px;
@@ -31,4 +32,13 @@ footer {
   margin-top: 100px;
   margin-bottom: 10px;
   text-align: center;
+}
+.card-space {
+  position: relative;
+  margin-top: 10px;
+}
+
+.span-ele {
+  position: absolute;
+  right: 3%;
 }
