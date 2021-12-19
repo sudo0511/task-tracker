@@ -1,13 +1,34 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Baloo Tamma 2", cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  margin: 20px auto;
+  max-width: 500px;
+  min-height: 300px;
+  border: solid 1px black;
+  padding: 20px;
+  overflow: auto;
+  border-radius: 8px;
+}
+.container div {
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer {
+  margin-top: 100px;
+  margin-bottom: 10px;
+  text-align: center;
 }
