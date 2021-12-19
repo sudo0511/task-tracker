@@ -7,6 +7,10 @@
   font-family: "Baloo Tamma 2", cursive;
 }
 
+body {
+  background: linear-gradient(90deg, blue, indigo, violet);
+}
+
 .container {
   margin: 20px auto;
   max-width: 500px;
@@ -17,6 +21,7 @@
   border-radius: 8px;
   background-color: darkgray;
 }
+
 .container div {
   padding: 20px;
 }
@@ -28,17 +33,37 @@ header {
   justify-content: space-around;
 }
 
+h1 {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
 footer {
   margin-top: 100px;
   margin-bottom: 10px;
   text-align: center;
 }
+
+.card {
+  font-size: 18px;
+  border-radius: 0%;
+}
+.card > p {
+  font-size: 14px;
+}
 .card-space {
   position: relative;
-  margin-top: 10px;
+  margin-top: 5px;
+  border: inset 1px black;
 }
 
 .span-ele {
   position: absolute;
   right: 3%;
+  color: rgb(243, 0, 0);
+  cursor: pointer;
+}
+
+.card.reminder {
+  border-left: solid 4px green;
 }
