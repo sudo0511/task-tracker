@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer>
-      <b>Copyright @C</b>
+      <b>Copyright @2021</b>
     </footer>
   );
 };
