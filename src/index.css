@@ -13,7 +13,7 @@ body {
 
 .container {
   margin: 20px auto;
-  max-width: 500px;
+  max-width: 600px;
   min-height: 300px;
   border: solid 2px black;
   padding: 15px;
@@ -55,7 +55,7 @@ footer {
 }
 .card-space {
   position: relative;
-  margin-top: 5px;
+  margin: 5px 10px;
   border: inset 1px black;
 }
 
