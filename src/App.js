@@ -18,12 +18,6 @@ function App() {
       day: "Dec 22th at 12 P.M",
       reminder: false,
     },
-    {
-      id: 3,
-      text: "third Doctor appointment",
-      day: "Dec 25th at 12 P.M",
-      reminder: true,
-    },
   ]);
 
   //delete a task
@@ -38,11 +32,23 @@ function App() {
       )
     );
   };
+  //add new task
+  const addTask = ({ taskInput, dayInput, reminderInput }) => {
+    const id = Math.floor(Math.random() * 1000) + 1;
+    const newTask = {
+      id,
+      text: taskInput,
+      day: dayInput,
+      reminder: reminderInput,
+    };
+    console.log(newTask);
+    setTasks([...tasks, newTask]);
+  };
 
   return (
     <div className="container">
       <Header />
-      <AddTask />
+      <AddTask onAdd={addTask} />
       <Tasks tasks={tasks} onDelete={deleteTask} onToggle={reminder} />
       <Footer />
     </div>
