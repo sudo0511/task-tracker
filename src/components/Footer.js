@@ -1,7 +1,11 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer>
-      <b>Copyright @2021</b>
+      <b>Copyright &copy; 2021</b>
+      <br />
+      <Link to="/about">About</Link>
     </footer>
   );
 };
